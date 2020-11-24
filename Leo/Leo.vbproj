@@ -1,0 +1,557 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{87EAD2BF-ADF5-43AA-A3A8-45C9B0583F24}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Leo.Ingreso</StartupObject>
+    <RootNamespace>Leo</RootNamespace>
+    <AssemblyName>Leo</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsFormsWithCustomSubMain</MyType>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\Users\1\Desktop\LEO\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <UpdateUrl>http://localhost/Leo/</UpdateUrl>
+    <ApplicationRevision>3</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Leo.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Leo.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Text</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>LEO Logo.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>23CDD16DAD3480E875D1AAB74D8644393037DE0C</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>Leo_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>false</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Barcode, Version=2.0.0.20, Culture=neutral, PublicKeyToken=6dc438ab78a525b3, processorArchitecture=MSIL" />
+    <Reference Include="itextsharp, Version=5.5.12.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\packages\iTextSharp.5.5.12\lib\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic.PowerPacks, Version=12.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="MySql.Data, Version=8.0.20.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Datos\conexion.vb" />
+    <Compile Include="Datos\fdebe.vb" />
+    <Compile Include="EBApartado.Designer.vb">
+      <DependentUpon>EBApartado.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EBApartado.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AgregarAbono.Designer.vb">
+      <DependentUpon>AgregarAbono.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AgregarAbono.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AgregarProductoAApartado.Designer.vb">
+      <DependentUpon>AgregarProductoAApartado.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AgregarProductoAApartado.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Apagar.Designer.vb">
+      <DependentUpon>Apagar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Apagar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="apartadocobro.Designer.vb">
+      <DependentUpon>apartadocobro.vb</DependentUpon>
+    </Compile>
+    <Compile Include="apartadocobro.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ApartadoDio.Designer.vb">
+      <DependentUpon>ApartadoDio.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ApartadoDio.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ApartadoNombre.Designer.vb">
+      <DependentUpon>ApartadoNombre.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ApartadoNombre.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BusApartados.Designer.vb">
+      <DependentUpon>BusApartados.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BusApartados.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BuscarNombre.Designer.vb">
+      <DependentUpon>BuscarNombre.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BuscarNombre.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CancelVenta.Designer.vb">
+      <DependentUpon>CancelVenta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CancelVenta.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Code128Content.vb" />
+    <Compile Include="Cobro.Designer.vb">
+      <DependentUpon>Cobro.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Cobro.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Code128Rendering.vb" />
+    <Compile Include="Corte.Designer.vb">
+      <DependentUpon>Corte.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Corte.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EnCaja.Designer.vb">
+      <DependentUpon>EnCaja.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EnCaja.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Apartado.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Apartado.Designer.vb">
+      <DependentUpon>Apartado.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EntradaDinero.Designer.vb">
+      <DependentUpon>EntradaDinero.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EntradaDinero.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FolioApartado.Designer.vb">
+      <DependentUpon>FolioApartado.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FolioApartado.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GRIDDio.Designer.vb">
+      <DependentUpon>GRIDDio.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GRIDDio.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ImprimirAbono.Designer.vb">
+      <DependentUpon>ImprimirAbono.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ImprimirAbono.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ImprimirApartado.Designer.vb">
+      <DependentUpon>ImprimirApartado.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ImprimirApartado.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ImprimirApartadoCompleto.Designer.vb">
+      <DependentUpon>ImprimirApartadoCompleto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ImprimirApartadoCompleto.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ImprimirArticulos.Designer.vb">
+      <DependentUpon>ImprimirArticulos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ImprimirArticulos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ImprimirCobro.Designer.vb">
+      <DependentUpon>ImprimirCobro.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ImprimirCobro.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ImprimirLosDio.Designer.vb">
+      <DependentUpon>ImprimirLosDio.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ImprimirLosDio.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ingreso.Designer.vb">
+      <DependentUpon>Ingreso.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Ingreso.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inicial.Designer.vb">
+      <DependentUpon>Inicial.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Inicial.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LeoDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LeoDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LeoDataSet.vb">
+      <DependentUpon>LeoDataSet.xsd</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="leoDataSet11.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>leoDataSet11.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ListaDeben.Designer.vb">
+      <DependentUpon>ListaDeben.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ListaDeben.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Prueba.Designer.vb">
+      <DependentUpon>Prueba.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Prueba.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegistroTotalVentas.Designer.vb">
+      <DependentUpon>RegistroTotalVentas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RegistroTotalVentas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reimprimir.Designer.vb">
+      <DependentUpon>Reimprimir.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reimprimir.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SacarApartados.Designer.vb">
+      <DependentUpon>SacarApartados.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SacarApartados.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SalidaDinero.Designer.vb">
+      <DependentUpon>SalidaDinero.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SalidaDinero.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vendedores Registro.Designer.vb">
+      <DependentUpon>Vendedores Registro.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Vendedores Registro.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Venta2.Designer.vb">
+      <DependentUpon>Venta2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Venta2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="EBApartado.resx">
+      <DependentUpon>EBApartado.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AgregarAbono.resx">
+      <DependentUpon>AgregarAbono.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AgregarProductoAApartado.resx">
+      <DependentUpon>AgregarProductoAApartado.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Apagar.resx">
+      <DependentUpon>Apagar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="apartadocobro.resx">
+      <DependentUpon>apartadocobro.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ApartadoDio.resx">
+      <DependentUpon>ApartadoDio.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ApartadoNombre.resx">
+      <DependentUpon>ApartadoNombre.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BusApartados.resx">
+      <DependentUpon>BusApartados.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BuscarNombre.resx">
+      <DependentUpon>BuscarNombre.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CancelVenta.resx">
+      <DependentUpon>CancelVenta.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cobro.resx">
+      <DependentUpon>Cobro.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Corte.resx">
+      <DependentUpon>Corte.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EnCaja.resx">
+      <DependentUpon>EnCaja.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Apartado.resx">
+      <DependentUpon>Apartado.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EntradaDinero.resx">
+      <DependentUpon>EntradaDinero.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FolioApartado.resx">
+      <DependentUpon>FolioApartado.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GRIDDio.resx">
+      <DependentUpon>GRIDDio.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ImprimirAbono.resx">
+      <DependentUpon>ImprimirAbono.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ImprimirApartado.resx">
+      <DependentUpon>ImprimirApartado.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ImprimirApartadoCompleto.resx">
+      <DependentUpon>ImprimirApartadoCompleto.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ImprimirArticulos.resx">
+      <DependentUpon>ImprimirArticulos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ImprimirCobro.resx">
+      <DependentUpon>ImprimirCobro.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ImprimirLosDio.resx">
+      <DependentUpon>ImprimirLosDio.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ingreso.resx">
+      <DependentUpon>Ingreso.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inicial.resx">
+      <DependentUpon>Inicial.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListaDeben.resx">
+      <DependentUpon>ListaDeben.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Prueba.resx">
+      <DependentUpon>Prueba.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegistroTotalVentas.resx">
+      <DependentUpon>RegistroTotalVentas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reimprimir.resx">
+      <DependentUpon>Reimprimir.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SacarApartados.resx">
+      <DependentUpon>SacarApartados.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SalidaDinero.resx">
+      <DependentUpon>SalidaDinero.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vendedores Registro.resx">
+      <DependentUpon>Vendedores Registro.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Venta2.resx">
+      <DependentUpon>Venta2.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="leoDataSet11.xsc">
+      <DependentUpon>leoDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="leoDataSet11.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>leoDataSet11.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="leoDataSet11.xss">
+      <DependentUpon>leoDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="Resources\USUARIO1.PNG" />
+    <None Include="Resources\USUARIO.jpg" />
+    <None Include="Resources\guiño.jpg" />
+    <None Include="Resources\whatsapp.png" />
+    <None Include="Resources\instagram.png" />
+    <None Include="Resources\facebook.png" />
+    <None Include="LeoDataSet.xsc">
+      <DependentUpon>LeoDataSet.xsd</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <Content Include="LeoDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <LastGenOutput>LeoDataSet.Designer.vb</LastGenOutput>
+    </Content>
+    <None Include="LeoDataSet.xss">
+      <DependentUpon>LeoDataSet.xsd</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Leo_TemporaryKey.pfx" />
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="Resources\seo-social-web-network-internet_273_icon-icons.com_61489.png" />
+    <None Include="Resources\printer_78936.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="cashier_icon-icons.com_53629.ico" />
+    <Content Include="LEO Logo.ico" />
+    <Content Include="Leo.accdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Recurso 1 %281%29.ico" />
+    <Content Include="Recurso 1.ico" />
+    <None Include="Resources\Encabezado.jpeg" />
+    <None Include="Resources\Recurso 11.png" />
+    <None Include="Resources\Recurso 1.png" />
+    <None Include="Resources\2017-10-15.png" />
+    <None Include="Resources\APAGAR.png" />
+    <None Include="Resources\IMPRI.png" />
+    <None Include="Resources\ABONO.jpg" />
+    <None Include="Resources\2017-10-12 %281%291.png" />
+    <None Include="Resources\2017-10-12 %281%29.png" />
+    <None Include="Resources\2017-10-12.png" />
+    <None Include="Resources\BUS.jpg" />
+    <None Include="Resources\NUEVO1.jpg" />
+    <None Include="Resources\descarga.jpg" />
+    <None Include="Resources\56552.png" />
+    <None Include="Resources\reserva-con-lupa_318-61898.jpg" />
+    <None Include="Resources\b47bfb19d11e66c3be00ccb0632047ce-lupa-simple.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.6.1">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.6.1 %28x86 y x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
