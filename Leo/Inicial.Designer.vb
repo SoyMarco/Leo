@@ -24,15 +24,15 @@ Partial Class Inicial
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Inicial))
-        Dim DataGridViewCellStyle10 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle11 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle12 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle13 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle14 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle15 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle16 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle17 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle18 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle6 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle7 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle8 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle9 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Label16 = New System.Windows.Forms.Label()
@@ -125,13 +125,6 @@ Partial Class Inicial
         Me.ApartadosBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.ApartadosTableAdapter = New Leo.LeoDataSetTableAdapters.ApartadosTableAdapter()
         Me.ProductosVendidosBindingSource1 = New System.Windows.Forms.BindingSource(Me.components)
-        Me.ReimpirmirAbono = New System.Windows.Forms.PictureBox()
-        Me.ReimprimirApartado = New System.Windows.Forms.PictureBox()
-        Me.ReimprimirVenta = New System.Windows.Forms.PictureBox()
-        Me.Imagentitulo = New System.Windows.Forms.PictureBox()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox3 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.IdDio = New System.Windows.Forms.Label()
         Me.DioBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.DioTableAdapter = New Leo.LeoDataSetTableAdapters.DioTableAdapter()
@@ -145,6 +138,13 @@ Partial Class Inicial
         Me.DataGridViewTextBoxColumn21 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.IdApartado = New System.Windows.Forms.Label()
         Me.PrecApartado = New System.Windows.Forms.Label()
+        Me.ReimprimirVenta = New System.Windows.Forms.PictureBox()
+        Me.ReimpirmirAbono = New System.Windows.Forms.PictureBox()
+        Me.ReimprimirApartado = New System.Windows.Forms.PictureBox()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox3 = New System.Windows.Forms.PictureBox()
+        Me.Imagentitulo = New System.Windows.Forms.PictureBox()
         CType(Me.VENTABindingNavigator, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.VENTABindingNavigator.SuspendLayout()
         CType(Me.VENTABindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -154,15 +154,15 @@ Partial Class Inicial
         CType(Me.ProductosVendidosBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.ApartadosBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.ProductosVendidosBindingSource1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.ReimpirmirAbono, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.ReimprimirApartado, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.ReimprimirVenta, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Imagentitulo, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DioBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DioDataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.ReimprimirVenta, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.ReimpirmirAbono, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.ReimprimirApartado, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Imagentitulo, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Button2
@@ -736,7 +736,7 @@ Partial Class Inicial
         '
         'NombreApartado
         '
-        Me.NombreApartado.BackColor = System.Drawing.Color.Silver
+        Me.NombreApartado.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
         Me.NombreApartado.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.NombreApartado.Font = New System.Drawing.Font("Century Gothic", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.NombreApartado.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
@@ -751,7 +751,7 @@ Partial Class Inicial
         '
         'TotalApartado
         '
-        Me.TotalApartado.BackColor = System.Drawing.Color.Silver
+        Me.TotalApartado.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
         Me.TotalApartado.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.TotalApartado.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TotalApartado.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
@@ -766,7 +766,7 @@ Partial Class Inicial
         '
         'PagoConApartado
         '
-        Me.PagoConApartado.BackColor = System.Drawing.Color.Silver
+        Me.PagoConApartado.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
         Me.PagoConApartado.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.PagoConApartado.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.PagoConApartado.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
@@ -781,7 +781,7 @@ Partial Class Inicial
         '
         'CambioApartado
         '
-        Me.CambioApartado.BackColor = System.Drawing.Color.Silver
+        Me.CambioApartado.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
         Me.CambioApartado.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.CambioApartado.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.CambioApartado.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
@@ -796,7 +796,7 @@ Partial Class Inicial
         '
         'CambioUltimV
         '
-        Me.CambioUltimV.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.CambioUltimV.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.CambioUltimV.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.CambioUltimV.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.CambioUltimV.ForeColor = System.Drawing.Color.White
@@ -811,7 +811,7 @@ Partial Class Inicial
         '
         'PagoConUltimV
         '
-        Me.PagoConUltimV.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.PagoConUltimV.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.PagoConUltimV.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.PagoConUltimV.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.PagoConUltimV.ForeColor = System.Drawing.Color.White
@@ -826,7 +826,7 @@ Partial Class Inicial
         '
         'TotalUltimaV
         '
-        Me.TotalUltimaV.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.TotalUltimaV.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.TotalUltimaV.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.TotalUltimaV.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TotalUltimaV.ForeColor = System.Drawing.Color.White
@@ -841,7 +841,7 @@ Partial Class Inicial
         '
         'NombreAbono
         '
-        Me.NombreAbono.BackColor = System.Drawing.Color.Silver
+        Me.NombreAbono.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
         Me.NombreAbono.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.NombreAbono.Font = New System.Drawing.Font("Century Gothic", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.NombreAbono.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
@@ -856,7 +856,7 @@ Partial Class Inicial
         '
         'CambioAbono
         '
-        Me.CambioAbono.BackColor = System.Drawing.Color.Silver
+        Me.CambioAbono.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
         Me.CambioAbono.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.CambioAbono.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.CambioAbono.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
@@ -871,7 +871,7 @@ Partial Class Inicial
         '
         'PagoConAbono
         '
-        Me.PagoConAbono.BackColor = System.Drawing.Color.Silver
+        Me.PagoConAbono.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
         Me.PagoConAbono.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.PagoConAbono.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.PagoConAbono.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
@@ -886,7 +886,7 @@ Partial Class Inicial
         '
         'TotalAbono
         '
-        Me.TotalAbono.BackColor = System.Drawing.Color.Silver
+        Me.TotalAbono.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
         Me.TotalAbono.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.TotalAbono.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TotalAbono.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
@@ -901,7 +901,7 @@ Partial Class Inicial
         '
         'Button9
         '
-        Me.Button9.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.Button9.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.Button9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
         Me.Button9.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Button9.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -973,14 +973,14 @@ Partial Class Inicial
         '
         Me.Button13.BackColor = System.Drawing.Color.White
         Me.Button13.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Button13.Font = New System.Drawing.Font("Arial", 12.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button13.Font = New System.Drawing.Font("Helvetica LT Std", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button13.ForeColor = System.Drawing.Color.Maroon
         Me.Button13.Location = New System.Drawing.Point(432, 569)
         Me.Button13.Margin = New System.Windows.Forms.Padding(0)
         Me.Button13.Name = "Button13"
         Me.Button13.Size = New System.Drawing.Size(204, 49)
         Me.Button13.TabIndex = 57318
-        Me.Button13.Text = "CANCELAR" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "VENTA"
+        Me.Button13.Text = "CANCELACIONES"
         Me.Button13.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
         Me.Button13.UseVisualStyleBackColor = False
         '
@@ -1026,19 +1026,19 @@ Partial Class Inicial
         '
         Me.ProductosVendidosDataGridView.AllowUserToAddRows = False
         Me.ProductosVendidosDataGridView.AllowUserToDeleteRows = False
-        DataGridViewCellStyle10.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.ProductosVendidosDataGridView.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle10
+        DataGridViewCellStyle1.BackColor = System.Drawing.Color.WhiteSmoke
+        Me.ProductosVendidosDataGridView.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
         Me.ProductosVendidosDataGridView.AutoGenerateColumns = False
         Me.ProductosVendidosDataGridView.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells
         Me.ProductosVendidosDataGridView.BackgroundColor = System.Drawing.Color.White
-        DataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle11.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        DataGridViewCellStyle11.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle11.ForeColor = System.Drawing.Color.White
-        DataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.ProductosVendidosDataGridView.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle11
+        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
+        DataGridViewCellStyle2.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle2.ForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
+        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.ProductosVendidosDataGridView.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle2
         Me.ProductosVendidosDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.ProductosVendidosDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn1, Me.DataGridViewTextBoxColumn7, Me.DataGridViewTextBoxColumn2, Me.DataGridViewTextBoxColumn3, Me.Cantidad, Me.Apartado, Me.RefApart, Me.Column1})
         Me.ProductosVendidosDataGridView.DataSource = Me.ProductosVendidosBindingSource
@@ -1052,11 +1052,11 @@ Partial Class Inicial
         '
         Me.DataGridViewTextBoxColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
         Me.DataGridViewTextBoxColumn1.DataPropertyName = "Id"
-        DataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter
-        DataGridViewCellStyle12.BackColor = System.Drawing.Color.White
-        DataGridViewCellStyle12.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle12.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.DataGridViewTextBoxColumn1.DefaultCellStyle = DataGridViewCellStyle12
+        DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter
+        DataGridViewCellStyle3.BackColor = System.Drawing.Color.White
+        DataGridViewCellStyle3.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.DataGridViewTextBoxColumn1.DefaultCellStyle = DataGridViewCellStyle3
         Me.DataGridViewTextBoxColumn1.HeaderText = "Id"
         Me.DataGridViewTextBoxColumn1.Name = "DataGridViewTextBoxColumn1"
         Me.DataGridViewTextBoxColumn1.ReadOnly = True
@@ -1066,10 +1066,10 @@ Partial Class Inicial
         '
         Me.DataGridViewTextBoxColumn7.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
         Me.DataGridViewTextBoxColumn7.DataPropertyName = "IdVenta"
-        DataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter
-        DataGridViewCellStyle13.BackColor = System.Drawing.Color.White
-        DataGridViewCellStyle13.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.DataGridViewTextBoxColumn7.DefaultCellStyle = DataGridViewCellStyle13
+        DataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter
+        DataGridViewCellStyle4.BackColor = System.Drawing.Color.White
+        DataGridViewCellStyle4.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.DataGridViewTextBoxColumn7.DefaultCellStyle = DataGridViewCellStyle4
         Me.DataGridViewTextBoxColumn7.HeaderText = "TICKET #"
         Me.DataGridViewTextBoxColumn7.Name = "DataGridViewTextBoxColumn7"
         Me.DataGridViewTextBoxColumn7.ReadOnly = True
@@ -1079,9 +1079,9 @@ Partial Class Inicial
         '
         Me.DataGridViewTextBoxColumn2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells
         Me.DataGridViewTextBoxColumn2.DataPropertyName = "Producto"
-        DataGridViewCellStyle14.Font = New System.Drawing.Font("Century Gothic", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle14.ForeColor = System.Drawing.Color.Black
-        Me.DataGridViewTextBoxColumn2.DefaultCellStyle = DataGridViewCellStyle14
+        DataGridViewCellStyle5.Font = New System.Drawing.Font("Century Gothic", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle5.ForeColor = System.Drawing.Color.Black
+        Me.DataGridViewTextBoxColumn2.DefaultCellStyle = DataGridViewCellStyle5
         Me.DataGridViewTextBoxColumn2.HeaderText = "PRODUCTO"
         Me.DataGridViewTextBoxColumn2.Name = "DataGridViewTextBoxColumn2"
         Me.DataGridViewTextBoxColumn2.ReadOnly = True
@@ -1091,11 +1091,11 @@ Partial Class Inicial
         '
         Me.DataGridViewTextBoxColumn3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
         Me.DataGridViewTextBoxColumn3.DataPropertyName = "Precio"
-        DataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopRight
-        DataGridViewCellStyle15.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle15.Format = "C2"
-        DataGridViewCellStyle15.NullValue = Nothing
-        Me.DataGridViewTextBoxColumn3.DefaultCellStyle = DataGridViewCellStyle15
+        DataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopRight
+        DataGridViewCellStyle6.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle6.Format = "C2"
+        DataGridViewCellStyle6.NullValue = Nothing
+        Me.DataGridViewTextBoxColumn3.DefaultCellStyle = DataGridViewCellStyle6
         Me.DataGridViewTextBoxColumn3.HeaderText = "PRECIO"
         Me.DataGridViewTextBoxColumn3.Name = "DataGridViewTextBoxColumn3"
         Me.DataGridViewTextBoxColumn3.ReadOnly = True
@@ -1105,9 +1105,9 @@ Partial Class Inicial
         '
         Me.Cantidad.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
         Me.Cantidad.DataPropertyName = "Cantidad"
-        DataGridViewCellStyle16.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopRight
-        DataGridViewCellStyle16.Font = New System.Drawing.Font("Century Gothic", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Cantidad.DefaultCellStyle = DataGridViewCellStyle16
+        DataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopRight
+        DataGridViewCellStyle7.Font = New System.Drawing.Font("Century Gothic", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Cantidad.DefaultCellStyle = DataGridViewCellStyle7
         Me.Cantidad.HeaderText = "Cantidad"
         Me.Cantidad.Name = "Cantidad"
         Me.Cantidad.ReadOnly = True
@@ -1116,9 +1116,9 @@ Partial Class Inicial
         'Apartado
         '
         Me.Apartado.DataPropertyName = "Apartado"
-        DataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopRight
-        DataGridViewCellStyle17.Font = New System.Drawing.Font("Arial", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Apartado.DefaultCellStyle = DataGridViewCellStyle17
+        DataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopRight
+        DataGridViewCellStyle8.Font = New System.Drawing.Font("Arial", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Apartado.DefaultCellStyle = DataGridViewCellStyle8
         Me.Apartado.HeaderText = "APARTADO"
         Me.Apartado.Name = "Apartado"
         Me.Apartado.ReadOnly = True
@@ -1126,8 +1126,8 @@ Partial Class Inicial
         'RefApart
         '
         Me.RefApart.DataPropertyName = "RefApart"
-        DataGridViewCellStyle18.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.RefApart.DefaultCellStyle = DataGridViewCellStyle18
+        DataGridViewCellStyle9.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.RefApart.DefaultCellStyle = DataGridViewCellStyle9
         Me.RefApart.HeaderText = "REFERENCIA"
         Me.RefApart.Name = "RefApart"
         Me.RefApart.ReadOnly = True
@@ -1179,79 +1179,6 @@ Partial Class Inicial
         '
         Me.ProductosVendidosBindingSource1.DataMember = "ProductosVendidos"
         Me.ProductosVendidosBindingSource1.DataSource = Me.LeoDataSet
-        '
-        'ReimpirmirAbono
-        '
-        Me.ReimpirmirAbono.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.ReimpirmirAbono.Image = Global.Leo.My.Resources.Resources.IMPRI
-        Me.ReimpirmirAbono.Location = New System.Drawing.Point(106, 711)
-        Me.ReimpirmirAbono.Name = "ReimpirmirAbono"
-        Me.ReimpirmirAbono.Size = New System.Drawing.Size(29, 28)
-        Me.ReimpirmirAbono.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.ReimpirmirAbono.TabIndex = 57302
-        Me.ReimpirmirAbono.TabStop = False
-        '
-        'ReimprimirApartado
-        '
-        Me.ReimprimirApartado.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.ReimprimirApartado.Image = Global.Leo.My.Resources.Resources.IMPRI
-        Me.ReimprimirApartado.Location = New System.Drawing.Point(108, 661)
-        Me.ReimprimirApartado.Name = "ReimprimirApartado"
-        Me.ReimprimirApartado.Size = New System.Drawing.Size(29, 28)
-        Me.ReimprimirApartado.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.ReimprimirApartado.TabIndex = 57257
-        Me.ReimprimirApartado.TabStop = False
-        '
-        'ReimprimirVenta
-        '
-        Me.ReimprimirVenta.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.ReimprimirVenta.Image = Global.Leo.My.Resources.Resources.IMPRI
-        Me.ReimprimirVenta.Location = New System.Drawing.Point(105, 580)
-        Me.ReimprimirVenta.Name = "ReimprimirVenta"
-        Me.ReimprimirVenta.Size = New System.Drawing.Size(29, 28)
-        Me.ReimprimirVenta.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.ReimprimirVenta.TabIndex = 57294
-        Me.ReimprimirVenta.TabStop = False
-        '
-        'Imagentitulo
-        '
-        Me.Imagentitulo.BackColor = System.Drawing.Color.Black
-        Me.Imagentitulo.Location = New System.Drawing.Point(449, 0)
-        Me.Imagentitulo.Name = "Imagentitulo"
-        Me.Imagentitulo.Size = New System.Drawing.Size(942, 60)
-        Me.Imagentitulo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.Imagentitulo.TabIndex = 57315
-        Me.Imagentitulo.TabStop = False
-        '
-        'PictureBox1
-        '
-        Me.PictureBox1.Image = Global.Leo.My.Resources.Resources.Encabezado
-        Me.PictureBox1.Location = New System.Drawing.Point(-1, 0)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(656, 60)
-        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox1.TabIndex = 57311
-        Me.PictureBox1.TabStop = False
-        '
-        'PictureBox3
-        '
-        Me.PictureBox3.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.PictureBox3.Location = New System.Drawing.Point(-1, 563)
-        Me.PictureBox3.Name = "PictureBox3"
-        Me.PictureBox3.Size = New System.Drawing.Size(644, 68)
-        Me.PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox3.TabIndex = 57319
-        Me.PictureBox3.TabStop = False
-        '
-        'PictureBox2
-        '
-        Me.PictureBox2.Image = Global.Leo.My.Resources.Resources._2017_10_12
-        Me.PictureBox2.Location = New System.Drawing.Point(748, 509)
-        Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(32, 40)
-        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox2.TabIndex = 57280
-        Me.PictureBox2.TabStop = False
         '
         'IdDio
         '
@@ -1352,13 +1279,87 @@ Partial Class Inicial
         Me.PrecApartado.Text = "0"
         Me.PrecApartado.Visible = False
         '
+        'ReimprimirVenta
+        '
+        Me.ReimprimirVenta.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.ReimprimirVenta.Image = Global.Leo.My.Resources.Resources.IMPRI
+        Me.ReimprimirVenta.Location = New System.Drawing.Point(105, 580)
+        Me.ReimprimirVenta.Name = "ReimprimirVenta"
+        Me.ReimprimirVenta.Size = New System.Drawing.Size(29, 28)
+        Me.ReimprimirVenta.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.ReimprimirVenta.TabIndex = 57294
+        Me.ReimprimirVenta.TabStop = False
+        '
+        'ReimpirmirAbono
+        '
+        Me.ReimpirmirAbono.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.ReimpirmirAbono.Image = Global.Leo.My.Resources.Resources.IMPRI
+        Me.ReimpirmirAbono.Location = New System.Drawing.Point(106, 711)
+        Me.ReimpirmirAbono.Name = "ReimpirmirAbono"
+        Me.ReimpirmirAbono.Size = New System.Drawing.Size(29, 28)
+        Me.ReimpirmirAbono.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.ReimpirmirAbono.TabIndex = 57302
+        Me.ReimpirmirAbono.TabStop = False
+        '
+        'ReimprimirApartado
+        '
+        Me.ReimprimirApartado.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.ReimprimirApartado.Image = Global.Leo.My.Resources.Resources.IMPRI
+        Me.ReimprimirApartado.Location = New System.Drawing.Point(108, 661)
+        Me.ReimprimirApartado.Name = "ReimprimirApartado"
+        Me.ReimprimirApartado.Size = New System.Drawing.Size(29, 28)
+        Me.ReimprimirApartado.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.ReimprimirApartado.TabIndex = 57257
+        Me.ReimprimirApartado.TabStop = False
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.PictureBox1.Image = Global.Leo.My.Resources.Resources.LeoLogo1
+        Me.PictureBox1.Location = New System.Drawing.Point(4, 0)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(163, 60)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox1.TabIndex = 57311
+        Me.PictureBox1.TabStop = False
+        '
+        'PictureBox2
+        '
+        Me.PictureBox2.Image = Global.Leo.My.Resources.Resources._2017_10_12
+        Me.PictureBox2.Location = New System.Drawing.Point(748, 509)
+        Me.PictureBox2.Name = "PictureBox2"
+        Me.PictureBox2.Size = New System.Drawing.Size(32, 40)
+        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox2.TabIndex = 57280
+        Me.PictureBox2.TabStop = False
+        '
+        'PictureBox3
+        '
+        Me.PictureBox3.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.PictureBox3.Location = New System.Drawing.Point(-1, 563)
+        Me.PictureBox3.Name = "PictureBox3"
+        Me.PictureBox3.Size = New System.Drawing.Size(430, 68)
+        Me.PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox3.TabIndex = 57319
+        Me.PictureBox3.TabStop = False
+        '
+        'Imagentitulo
+        '
+        Me.Imagentitulo.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.Imagentitulo.Location = New System.Drawing.Point(1, 0)
+        Me.Imagentitulo.Name = "Imagentitulo"
+        Me.Imagentitulo.Size = New System.Drawing.Size(1390, 60)
+        Me.Imagentitulo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.Imagentitulo.TabIndex = 57315
+        Me.Imagentitulo.TabStop = False
+        '
         'Inicial
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoScroll = True
-        Me.BackColor = System.Drawing.Color.Silver
-        Me.ClientSize = New System.Drawing.Size(1370, 749)
+        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        Me.ClientSize = New System.Drawing.Size(1387, 749)
         Me.Controls.Add(Me.Button13)
         Me.Controls.Add(Me.ReimprimirVenta)
         Me.Controls.Add(Me.Button9)
@@ -1403,7 +1404,6 @@ Partial Class Inicial
         Me.Controls.Add(Me.VENDEDOR)
         Me.Controls.Add(Me.NombreAbono)
         Me.Controls.Add(Me.Label8)
-        Me.Controls.Add(Me.Imagentitulo)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.NombreApartado)
         Me.Controls.Add(Me.TOTAL)
@@ -1419,6 +1419,7 @@ Partial Class Inicial
         Me.Controls.Add(Me.Label14)
         Me.Controls.Add(Me.Label10)
         Me.Controls.Add(Me.VENTABindingNavigator)
+        Me.Controls.Add(Me.Imagentitulo)
         Me.Cursor = System.Windows.Forms.Cursors.Default
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
@@ -1437,15 +1438,15 @@ Partial Class Inicial
         CType(Me.ProductosVendidosBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.ApartadosBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.ProductosVendidosBindingSource1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.ReimpirmirAbono, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.ReimprimirApartado, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.ReimprimirVenta, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Imagentitulo, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.DioBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.DioDataGridView, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.ReimprimirVenta, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.ReimpirmirAbono, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.ReimprimirApartado, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Imagentitulo, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

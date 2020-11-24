@@ -468,6 +468,10 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\LeoLogo1.gif" />
+    <None Include="Resources\anuncio tootRecurso 1-100.jpg" />
+    <None Include="Resources\anuncio tootRecurso 4-100.jpg" />
+    <None Include="Resources\LeoLogo.gif" />
     <None Include="leoDataSet11.xsc">
       <DependentUpon>leoDataSet11.xsd</DependentUpon>
     </None>
